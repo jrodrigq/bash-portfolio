@@ -1,0 +1,13 @@
+<div class="flex flex-wrap">
+  <ng-container *ngFor="let cmd of cmdList; let i = index">
+    <div class="w-1/5">
+      <span
+        [ngClass]="{
+          'text-blue-500': cmd.isFolder,
+          'text-white-800': !cmd.isFolder
+        }"
+        >{{ cmd.name }}</span
+      >
+    </div>
+  </ng-container>
+</div>

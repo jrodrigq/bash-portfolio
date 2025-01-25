@@ -1,0 +1,9 @@
+app-load-image {
+  position: relative;
+  display: block;
+}
+
+app-load-image > * {
+  position: relative;
+  z-index: 1;
+}
